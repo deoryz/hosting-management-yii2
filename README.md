@@ -22,6 +22,7 @@ Clone repository ini atau download
 
 Buka folder menggunakan cmd lalu jalankan perintah
 
+    composer global require "fxp/composer-asset-plugin:^1.2.0"
     composer install
 
 buat database menggunakan MySql untuk aplikasi ini
@@ -35,10 +36,6 @@ copy file common/config/main-local-template.php lalu rename menjadi main-local.p
         'password' => '',
         'charset' => 'utf8',
     ],
-    
-Lalu lakukan inisialisasi Yii2 dengan perintah di bawah ini di CMD, dan pilih versi dev
-
-    php yii init
     
 Lalu lakukan migrasi database dengan menjalankan perintah
 
