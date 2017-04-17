@@ -16,5 +16,8 @@ Requirement
 
 Cara Installasi
 -------------------------------
-1. Clone repository ini atau download
 
+Clone repository ini atau download
+Buka folder menggunakan cmd lalu jalankan perintah
+
+    composer install
