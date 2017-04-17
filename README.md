@@ -13,11 +13,37 @@ Requirement
 -------------------------------
 1. PHP 5.6 ke atas
 1. Menggunakan Yii2
+1. MySql 5 ke atas
 
 Cara Installasi
 -------------------------------
 
 Clone repository ini atau download
+
 Buka folder menggunakan cmd lalu jalankan perintah
 
     composer install
+
+buat database menggunakan MySql untuk aplikasi ini
+
+copy file common/config/main-local-template.php lalu rename menjadi main-local.php dan sesuaikan dengan koneksi ke database anda
+    
+    'db' => [
+        'class' => 'yii\db\Connection',
+        'dsn' => 'mysql:host=localhost;dbname=manage_hosting',
+        'username' => 'root',
+        'password' => '',
+        'charset' => 'utf8',
+    ],
+    
+Lalu lakukan inisialisasi Yii2 dengan perintah di bawah ini di CMD, dan pilih versi dev
+
+    php yii init
+    
+Lalu lakukan migrasi database dengan menjalankan perintah
+
+    php yii migrate
+    
+
+
+
